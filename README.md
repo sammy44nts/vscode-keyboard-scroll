@@ -14,5 +14,5 @@ Visual Studio Code default keybindings about screen scroll:
 |---|---|
 | `ctrl+up` | Scroll screen one line up |
 | `ctrl+down` | Scroll screen one line down |
-| `ctrl+pageup` | Scroll screen one page up |
-| `ctrl+pagedown` | Scroll screen one page down |
+| `alt+pageup` | Scroll screen one page up |
+| `alt+pagedown` | Scroll screen one page down |
