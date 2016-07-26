@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext): void {
 		'emacs.C-l', () => {
 			if (scrollPosition === Scroll.Center) {
 				vscode.window.activeTextEditor.revealRange(
-					vscode.window.activeTextEditor.selection.with(),
+					vscode.window.activeTextEditor.selection,
 					vscode.TextEditorRevealType.InCenter
 				);
 				scrollPosition = Scroll.Top;
@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext): void {
 				
 				Promise.all(promises).then(() => {
 					vscode.window.activeTextEditor.revealRange(
-						vscode.window.activeTextEditor.selection.with(),
+						vscode.window.activeTextEditor.selection,
 						vscode.TextEditorRevealType.Default
 					);
 					scrollPosition = Scroll.Bottom;
@@ -40,7 +40,7 @@ export function activate(context: vscode.ExtensionContext): void {
 				
 				Promise.all(promises).then(() => {
 					vscode.window.activeTextEditor.revealRange(
-						vscode.window.activeTextEditor.selection.with(),
+						vscode.window.activeTextEditor.selection,
 						vscode.TextEditorRevealType.Default
 					);
 					scrollPosition = Scroll.Center;
